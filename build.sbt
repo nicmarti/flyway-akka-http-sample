@@ -13,7 +13,8 @@ lazy val root = (project in file(".")).
   settings(commonSettings: _*).
   settings(
     name := "Test debug flyway sur Clever cloud",
-    ivyLoggingLevel := UpdateLogging.Full
+    ivyLoggingLevel := UpdateLogging.Full,
+    javaOptions += "javax.net.debug=all" // trying to debug SSL connection
   )
 
 val akkaStreamV = "2.0.1"
@@ -23,6 +24,10 @@ val versionAkka = "2.3.14+"
 // Flyway for database migrations
 libraryDependencies ++= Seq(
   "com.h2database" % "h2" % "1.4.191",
+
+  // Should not be required, but let's see if it works
+    "org.flywaydb" % "flyway-core" % "3.2.1",
+
     // For simple HTTP server (required for Clevercloud
   "com.typesafe.akka" %% "akka-actor" % versionAkka,
   "com.typesafe.akka" %% "akka-testkit" % versionAkka,
