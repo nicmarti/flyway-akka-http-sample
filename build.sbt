@@ -27,6 +27,7 @@ libraryDependencies ++= Seq(
 
   // Should not be required, but let's see if it works
     "org.flywaydb" % "flyway-core" % "3.2.1",
+    "org.flywaydb" % "flyway-sbt" % "3.2.1",
 
     // For simple HTTP server (required for Clevercloud
   "com.typesafe.akka" %% "akka-actor" % versionAkka,
