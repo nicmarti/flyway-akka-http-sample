@@ -59,6 +59,8 @@ It seems that there's an issue with HTTPs or maybe the SSL certificate from flyw
 # References
     
 See [A Stackoverflow error with flyway-sbt](http://stackoverflow.com/questions/37980246/cannot-resolve-flyway-sbt-with-handshake-failure-on-centos7]
+
 See also [Flyway quick how-to](https://flywaydb.org/getstarted/firststeps/sbt)
+
 [An issue on flyway with the artefacts](https://github.com/flyway/flyway/issues/1276)
     
