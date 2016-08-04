@@ -1,0 +1,49 @@
+# ignore binary files
+*.class
+bin
+
+# ignore log files
+logs/
+logs/*
+*.log
+
+# ignore sbt files
+.cache/
+.history/
+.lib/
+project/target
+project/target/*
+project/boot/
+project/plugins/project/
+target
+target/*
+dist/*
+lib_managed/
+src_managed/
+
+# ignore Mac OS X files
+*.DS_Store
+
+# ignore IDE files
+.idea/*
+.idea
+.idea_modules
+
+# ignore temporary files from compiling
+*.swp
+*.swo
+*.iml
+*.ipr
+*.iws
+.lib
+
+# ignore SASS cache
+src/main/resources/public/.sass-cache/
+
+# ignore ruby files
+.ruby-version
+.clever.json
+
+
+#deploy scripts
+deploy-*.sh
